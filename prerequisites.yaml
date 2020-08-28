@@ -1,0 +1,11 @@
+---
+- hosts: all
+
+  tasks:
+  - name: Install prerequisites
+    package:
+      name:
+      - vim
+      - git
+      - openjdk:8-jdk-alpine
+      state: present
