@@ -1,0 +1,9 @@
+---
+- hosts: all
+
+  tasks:
+  - name: Pull Springboot
+    git:
+      repo: "{{ springboot_repo }}"
+      version: "{{ springboot_branch }}"
+      dest: /var/www/springboot/
